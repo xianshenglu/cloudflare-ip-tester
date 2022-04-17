@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/proxy-cf/:match/:remain*",
+      "source": "/proxy-cf/(.*)",
       "destination": "/api/proxy-cf"
     }
   ]
