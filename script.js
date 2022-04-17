@@ -267,7 +267,7 @@ function speedRecur(list, i) {
         if (milliseconds > 100) // fix first jump
             speedProgressCallback(rbytes, milliseconds, id)
     }
-    http.timeout = speedTimeout
+    http.timeout = Number($('select-speed-timeout').val()) * 1000 || speedTimeout
     http.send()
 }
 
