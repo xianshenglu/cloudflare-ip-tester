@@ -5,6 +5,7 @@ console.log('outer started!')
 
 module.exports = (req, res) => {
   console.log('started!',req.url)
+  res.status(200).send("hello");
   if (!req.url.startsWith("/proxy/")) {
     return;
   }
