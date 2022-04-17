@@ -3,6 +3,7 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 const sourceHost = "ip.flares.cloud";
 
 module.exports = (req, res) => {
+  console.log('started!',req.url)
   if (!req.url.startsWith("/proxy-cf/")) {
     return;
   }
