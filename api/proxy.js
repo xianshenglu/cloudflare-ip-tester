@@ -5,11 +5,10 @@ console.log('outer started!')
 
 module.exports = (req, res) => {
   console.log('started!',req.url)
-  res.status(200).send("hello");
   if (!req.url.startsWith("/proxy/")) {
     return;
   }
-  const urlMatch = url.match(/\/proxy\/([^/]+)\/.*/);
+  const urlMatch = req.url.match(/\/proxy\/([^/]+)\/.*/);
   const cloudflareIp = urlMatch[1];
   const path = urlMatch[2];
   const target = `http://${urlMatch[1]}.${sourceHost}`;
