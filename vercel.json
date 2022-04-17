@@ -1,20 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/proxy-cf-ip/:match/:remain*",
-      "destination": "http://:match.ip.flares.cloud/:remain*",
-      "has": [
-        {
-          "type": "header",
-          "key": "Origin",
-          "value": "http://ip.flares.cloud"
-        },
-        {
-          "type": "header",
-          "key": "Referer",
-          "value": "http://ip.flares.cloud/"
-        }
-      ]
+      "source": "/proxy-cf/:match/:remain*",
+      "destination": "/api/proxy-cf"
     }
   ]
 }

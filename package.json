@@ -1,0 +1,26 @@
+{
+  "name": "cloudflare-ip-tester",
+  "version": "1.0.0",
+  "description": "As one of the most advanced content delivery network, Cloudflare provides a wide range of Anycast IP for user to resolute. \r This feature is very convenient for developers by using private DNS resolution or CNAME Setup which can avoid changing nameservers.\r Although Anycast IP can automatically hit the best node, sometimes it's found that different IPs may have different connection quality.\r In order to have a more comprehensive understanding of the access quality in different IP segments, this tool is developed to test a batch of Anycast IP provided by Cloudflare and analyze both respond time and download speed of every IP.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xianshenglu/cloudflare-ip-tester.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xianshenglu/cloudflare-ip-tester/issues"
+  },
+  "homepage": "https://github.com/xianshenglu/cloudflare-ip-tester#readme",
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "http-proxy-middleware": "^2.0.4"
+  }
+}
