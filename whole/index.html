@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Cloudflare IP Batch Test Tool including HTTP respond time, regition detection and download speed test">
   <title>Cloudflare IP Batch Test Tool +</title>
-  <link href="https://unpkg.com/tabulator-tables@4.7.2/dist/css/tabulator_site.min.css" rel="stylesheet">
+  <link href="../static/lib_modules/tabulator-tables@4.7.2/dist/css/tabulator_site.min.css" rel="stylesheet">
   <link href="/style.css" rel="stylesheet">
-  <script type="text/javascript" src="https://unpkg.com/jquery@3.5.1/dist/jquery.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.7.2/dist/js/tabulator.min.js"></script>
+  <script type="text/javascript" src="../static/lib_modules/jquery@3.5.1/dist/jquery.js"></script>
+  <script type="text/javascript" src="../static/lib_modules/tabulator-tables@4.7.2/dist/js/tabulator.min.js"></script>
 </head>
 
 <body>
@@ -34,8 +34,10 @@
             <option value="0">115KB</option>
             <option value="1" selected="selected">1.20MB</option>
             <option value="2">10.4MB</option>
-          </select>
+          </select>          
           <button class="button" id="test-speed" status=0> Speed </button>
+          <input id="select-speed-timeout" class="border" type="number" value="4" min="0.1" max="1000"></input>
+          <button class="button" disabled>Timeout</button>
         </div>
       </div>
     </div>
