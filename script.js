@@ -283,7 +283,7 @@ $("#test-speed").click(function () {
             var one = row.getData()
             sList.push({
                 id: one.id,
-                addr: "/proxy/" + "?name=" + Math.random()
+                addr: "/api/proxy" + "?name=" + Math.random()
             })
         })
         speedRecur(sList, 0) // Make sure run in turn
